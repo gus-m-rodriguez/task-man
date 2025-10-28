@@ -3,6 +3,11 @@ CREATE TABLE tareas (
     titulo VARCHAR(255) UNIQUE NOT NULL,
     descripcion TEXT
 );
+
+ALTER TABLE tareas ADD COLUMN usuario_id INTEGER REFERENCES usuarios(id);
+
+ALTER TABLE usuarios ADD COLUMN gravatar VARCHAR(255);
+
 CREATE TABLE usuarios (
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,

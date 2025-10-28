@@ -1,11 +1,11 @@
-import { Router } from "express";
+import Router from "express-promise-router";
 import { signin, signup, signout, profile } from "../controllers/auth.controller.js";
 
 const router = Router();
 
-router.get("/signin", signin);
+router.post("/signin", signin);
 
-router.get("/signup", signup);
+router.post("/signup", signup);
 
 router.post("/signout", signout);
 

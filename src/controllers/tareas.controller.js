@@ -1,10 +1,9 @@
 import { pool } from "../db.js";
 
 export const listarTareas = async (req, res) => {
-   
-        const resultado = await pool.query("SELECT * FROM tareas");
-        console.log(resultado);
-        return res.json(resultado.rows);
+    console.log(req.usuarioId);
+    const resultado = await pool.query("SELECT * FROM tareas");
+    return res.json(resultado.rows);
 }
 
 export const listarTarea = async (req, res) => {

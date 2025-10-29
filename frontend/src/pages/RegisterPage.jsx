@@ -1,5 +1,5 @@
 
-import {Button, Card, Input, Label} from '../components/ui/index.js';
+import {Button, Card, Container, Input, Label} from '../components/ui/index.js';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
@@ -8,7 +8,7 @@ import { useAuth } from '../context/AuthContext.jsx';
 
 function RegisterPage() {
   const {register, handleSubmit, formState: {errors}} = useForm();
-  const { signup } = useAuth();
+  const { signup, errors: setUserErrors } = useAuth();
   const navigate = useNavigate();
   const onSubmit = handleSubmit (async(data) => {
     //console.log(data);
@@ -23,13 +23,20 @@ function RegisterPage() {
     //const result = await response.json();
     //const result = await axios.post('http://localhost:3000/api/signup', data, {withCredentials: true});
     //console.log(result);
-    await signup(data);
-    navigate('/perfil');
+    const user =await signup(data);
+    if(user) {
+      navigate('/perfil');
+    }
   });
  
   return (
-    <div className='h-[calc(90vh-64px)] flex items-center justify-center'>
+    <Container className='h-[calc(90vh-64px)] flex items-center justify-center'>
       <Card>
+        { setUserErrors && setUserErrors.map((error, index) => (
+          <div key={index} className='bg-red-500 text-white p-2 mb-2 rounded'>
+            {error}
+          </div>
+        ))}
         <h3 className='text-2xl font-bold text-blue-600 my-2'>Registro</h3>
         <form onSubmit={onSubmit}>
           <div>
@@ -66,7 +73,7 @@ function RegisterPage() {
       </div>
         </form>
       </Card>
-    </div>
+    </Container>
   )
 }
 

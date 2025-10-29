@@ -1,10 +1,12 @@
-import { createContext, useState, useContext } from "react";
-import axios from "axios";
+import { createContext, useState, useContext, useEffect } from "react";
+import Cookie from "js-cookie";
 
-export const AuthContext = createContext();
+import axios from "../api/axios";
+
+export const authContext = createContext();
 
 export const useAuth = () => {
-    const context = useContext(AuthContext);
+    const context = useContext(authContext);
     if (!context) {
         throw new Error("useAuth must be used within an AuthProvider");
     }
@@ -16,17 +18,51 @@ export function AuthProvider({ children }) {
     const [errors, setErrors] = useState(null);
 
     const signin = async (data) => {
-        const res = await axios.post("http://localhost:3000/api/signin", data, {withCredentials: true,});
-        console.log(res.data);
-        setUser(res.data);
+        try {
+            const res = await axios.post("/signin", data);
+            console.log(res.data);
+            setUser(res.data);
+            setIsAuth(true);
+            return res.data;
+        } catch (error) {
+            console.log(error);
+            if(Array.isArray(error.response.data)) {
+                return setErrors(error.response.data);
+            }
+            setErrors([error.response.data.message]);
+        }
     }
     const signup = async (data) => {
-        const res = await axios.post('http://localhost:3000/api/signup', data, {withCredentials: true});
-        console.log(res);
-        setUser(res.data);
+       try {
+           const res = await axios.post('/signup', data);
+            setUser(res.data);
+            setIsAuth(true);
+            return res.data;
+        } catch (error) {
+            console.log(error);
+            if(Array.isArray(error.response.data)) {
+                return setErrors(error.response.data);
+            }
+            setErrors([error.response.data.message]);
+        }
     }
 
-    return <AuthContext.Provider value={{ user, isAuth, errors, signup, setUser, signin }}>
+    useEffect(() => {
+        if (Cookie.get("token")) {
+            axios.get("/profile")
+                .then((res) => {
+                    setUser(res.data);
+                    setIsAuth(true);
+                })
+                .catch((err) => {
+                    console.log(err);
+                    setUser(null);
+                    setIsAuth(false);
+                });
+        }
+    }, []);
+
+    return <authContext.Provider value={{ user, isAuth, errors, signup, setUser, signin }}>
         {children}
-    </AuthContext.Provider>
+    </authContext.Provider>
 }

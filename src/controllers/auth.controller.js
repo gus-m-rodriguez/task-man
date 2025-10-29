@@ -22,9 +22,9 @@ export const signin = async (req, res) => {
     const token = await createAccessToken({id: result.rows[0].id});
     console.log(result);
     res.cookie("token", token, {
-        httpOnly: true,
-        secure: true,
-        sameSite: "none",
+        httpOnly: false,
+        //secure: false,
+        //sameSite: "lax",
         //1 dia milisegundos, segundos, minutos, horas
         maxAge: 1000 * 60 * 60 * 24 //1 dia
         });
@@ -47,9 +47,9 @@ export const signup = async (req, res, next) => {
 
         console.log(resultado);
         res.cookie("token", token, {
-            httpOnly: true,
-            secure: true,
-            sameSite: "none",
+            httpOnly: false,
+            //secure: false,
+            //sameSite: "lax",
             //1 dia milisegundos, segundos, minutos, horas
             maxAge: 1000 * 60 * 60 * 24 //1 dia
                     });

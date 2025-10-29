@@ -1,4 +1,8 @@
+import Navbar from './components/navbar/navbar.jsx'
+import { Container } from './components/ui/index.js'
+
 import {Routes, Route} from 'react-router-dom'
+
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import LoginPage from './pages/LoginPage'
@@ -9,21 +13,29 @@ import TareaFormPage from './pages/TareaFormPage'
 import NotFoundPage from './pages/NotFound'
 
 
+
 function App () {
   return(
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/about" element={<AboutPage />} />
+    <>
+      <Navbar/>
+      <Container className="py-5">
+         <Routes>
 
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/register" element={<RegisterPage />} />
-      <Route path="/perfil" element={<ProfilePage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+      
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/perfil" element={<ProfilePage />} />
 
-      <Route path="/tareas" element={<TareasPage />} />
-      <Route path="/tareas/crear" element={<TareaFormPage />} />
-      <Route path="/tareas/editar/:id" element={<TareaFormPage />} />
-      <Route path="*" element={<NotFoundPage/>} />
-    </Routes>
+          <Route path="/tareas" element={<TareasPage />} />
+          <Route path="/tareas/crear" element={<TareaFormPage />} />
+          <Route path="/tareas/editar/:id" element={<TareaFormPage />} />
+          <Route path="*" element={<NotFoundPage/>} />
+
+        </Routes>
+      </Container>
+    </>
   )
 }
 

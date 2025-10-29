@@ -1,10 +1,10 @@
-import React from 'react'
+import {useAuth} from '../context/AuthContext.jsx';
 
 function ProfilePage() {
+  const { user } = useAuth();
   return (
     <div>
-      <h1>User Profile</h1>
-      <p>This is the profile page of our application.</p>
+      <div>{JSON.stringify(user, null, 2)}</div>
     </div>
   )
 }

@@ -23,6 +23,7 @@ export const signin = async (req, res) => {
     console.log(result);
     res.cookie("token", token, {
         httpOnly: true,
+        secure: true,
         sameSite: "none",
         //1 dia milisegundos, segundos, minutos, horas
         maxAge: 1000 * 60 * 60 * 24 //1 dia
@@ -47,6 +48,7 @@ export const signup = async (req, res, next) => {
         console.log(resultado);
         res.cookie("token", token, {
             httpOnly: true,
+            secure: true,
             sameSite: "none",
             //1 dia milisegundos, segundos, minutos, horas
             maxAge: 1000 * 60 * 60 * 24 //1 dia

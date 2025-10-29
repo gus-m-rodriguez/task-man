@@ -1,10 +1,71 @@
-import React from 'react'
+
+import {Button, Card, Input, Label} from '../components/ui/index.js';
+import { useForm } from 'react-hook-form';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext.jsx';
+
+//import axios from 'axios';
 
 function RegisterPage() {
+  const {register, handleSubmit, formState: {errors}} = useForm();
+  const { signup } = useAuth();
+  const navigate = useNavigate();
+  const onSubmit = handleSubmit (async(data) => {
+    //console.log(data);
+    //const response = await fetch ('http://localhost:3000/api/signup', {
+    //  credentials: 'include',
+    //  method: 'POST',
+    //  body: JSON.stringify(data),
+    //  headers: {
+    //    'Content-Type': 'application/json'
+    //  }
+    //});
+    //const result = await response.json();
+    //const result = await axios.post('http://localhost:3000/api/signup', data, {withCredentials: true});
+    //console.log(result);
+    await signup(data);
+    navigate('/perfil');
+  });
+ 
   return (
-    <div>
-      <h1>Register</h1>
-        <p>Please fill in the form to create an account.</p>
+    <div className='h-[calc(90vh-64px)] flex items-center justify-center'>
+      <Card>
+        <h3 className='text-2xl font-bold text-blue-600 my-2'>Registro</h3>
+        <form onSubmit={onSubmit}>
+          <div>
+            <Label htmlFor='nombre'>Nombre</Label>
+            <Input id="nombre" placeholder= "Ingrese su nombre"{...register("nombre", {required:true} )}></Input>
+            {
+              errors.nombre && <span className='text-red-500'>Este campo es obligatorio</span>
+            }
+          </div>
+          <div>
+            <Label htmlFor='email'>E-Mail</Label>
+            <Input id="email" type="email" placeholder= "Ingrese su correo electrónico"{...register("email", {required:true})}></Input>
+            {
+              errors.email && <span className='text-red-500'>Este campo es obligatorio</span>
+            }
+          </div>
+          <div>
+            <Label htmlFor='password'>Contraseña</Label>
+            <Input id="password" type="password" placeholder= "Ingrese su contraseña"{...register("password", {required:true})}></Input>
+            {
+              errors.password && <span className='text-red-500'>Este campo es obligatorio</span>
+            }
+          </div>
+          <div className='mt-2'>
+            <Button>
+              Registrarse
+            </Button>
+          </div>
+          <div className="flex justify-between mt-4 text-gray-600">
+        <p>Si ya tienes una cuenta{" "}</p>
+        <Link to="/login" className="text-blue-600 hover:underline">
+          Inicia sesión
+        </Link>
+      </div>
+        </form>
+      </Card>
     </div>
   )
 }

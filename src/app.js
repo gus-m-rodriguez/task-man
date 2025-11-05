@@ -8,14 +8,16 @@ import { pool } from "./db.js";
 import { ORIGIN } from "./config.js";
 
 const app = express();
+// ★ detrás de Railway/NGINX:
+app.set("trust proxy", 1);
+
 //Middlewares
-app.use(morgan("dev"));
-app.use(cors(
-    {
-        origin: ORIGIN,
-        credentials: true,
-    }
-));
+app.use(cors({
+  origin: ORIGIN,                 // p.ej. https://ftask-man-production.up.railway.app
+  credentials: true,              // ← permite cookies
+  methods: ["GET","POST","PUT","DELETE","OPTIONS"],
+  allowedHeaders: ["Content-Type","Authorization"]
+}));
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

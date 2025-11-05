@@ -22,9 +22,10 @@ export const signin = async (req, res) => {
     const token = await createAccessToken({id: result.rows[0].id});
     console.log(result);
     res.cookie("token", token, {
-        httpOnly: false,
-        //secure: false,
-        //sameSite: "lax",
+        httpOnly: true,
+        secure: true,
+        sameSite: "none",
+        path: "/",
         //1 dia milisegundos, segundos, minutos, horas
         maxAge: 1000 * 60 * 60 * 24 //1 dia
         });
@@ -47,9 +48,10 @@ export const signup = async (req, res, next) => {
 
         console.log(resultado);
         res.cookie("token", token, {
-            httpOnly: false,
-            //secure: false,
-            //sameSite: "lax",
+            httpOnly: true,
+            secure: true,
+            sameSite: "none",
+            path: "/",
             //1 dia milisegundos, segundos, minutos, horas
             maxAge: 1000 * 60 * 60 * 24 //1 dia
                     });
@@ -70,7 +72,7 @@ export const signup = async (req, res, next) => {
 // SIGNOUT
 
 export const signout = (req, res) => {
-    res.clearCookie("token");
+    res.clearCookie("token", { path: "/", secure: true, sameSite: "None" });
     return res.json({message: "Sesion cerrada"});
 };
 

@@ -6,6 +6,8 @@ CREATE TABLE tareas (
 
 ALTER TABLE tareas ADD COLUMN usuario_id INTEGER REFERENCES usuarios(id);
 
+ALTER TABLE tareas DROP CONSTRAINT tareas_titulo_key
+
 ALTER TABLE usuarios ADD COLUMN gravatar VARCHAR(255);
 
 CREATE TABLE usuarios (

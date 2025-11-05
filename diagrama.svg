@@ -1,0 +1,182 @@
+<svg width="1400" height="1140" viewBox="0 0 1300 1140" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Segoe UI, Arial">
+  <defs>
+    <linearGradient id="laneGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <style>
+      .lane { fill:url(#laneGrad); stroke:#e5e7eb; rx:16; }
+      .laneHeader { fill:#fef08a; stroke:#fde047; }
+      .laneHeaderText { font-weight:800; fill:#1f2937; font-size:13.5px; }
+      .card { fill:#ffffff; stroke:#cbd5e1; stroke-width:1.2; rx:12; }
+      .cardTitle { font-weight:700; fill:#0f172a; font-size:15px; }
+      .cardSub { fill:#374151; font-size:12.5px; }
+      .chip { fill:#e5e7eb; rx:6; }
+      .chipText { fill:#111827; font-size:11px; }
+      .badge { fill:#dbeafe; stroke:#93c5fd; rx:8; }
+      .badgeText { font-size:12px; fill:#1e3a8a; }
+      .arrow { stroke:#334155; stroke-width:1.7; fill:none; marker-end:url(#arrow); }
+      .ribbon { fill:#fde047; stroke:#fbbf24; }
+      .ribbonText { font-weight:700; fill:#1f2937; writing-mode:tb; glyph-orientation-vertical:0; font-size:13px; }
+      .note { fill:#fef9c3; stroke:#fde68a; rx:10; }
+      .accentBlue { stroke:#2563eb; }
+      .accentGreen { stroke:#059669; }
+      .accentIndigo { stroke:#4f46e5; }
+      .accentSlate { stroke:#64748b; }
+    </style>
+  </defs>
+
+  <!-- RIBBON transversal: Chatbot/IA Conversacional (derecha, desde Paso 2 hasta fin) -->
+  <rect x="1285" y="300" width="40" height="680" class="ribbon"/>
+  <!-- Texto vertical de abajo hacia arriba -->
+  <text x="1305" y="640" writing-mode="vertical-rl" text-orientation="upright" text-anchor="middle" dominant-baseline="middle"
+  transform="rotate(180 1305 640)" class="ribbonText"> Chatbot / IA Conversacional (seguimiento, coordinación, feedback)
+  </text>
+
+  <!-- LANE 1 -->
+  <rect x="60" y="40" width="1210" height="220" class="lane"/>
+  <rect x="60" y="40" width="1210" height="32" class="laneHeader"/>
+  <text x="72" y="61" class="laneHeaderText">1) Búsqueda y Preselección (Dashboard + Filtro IA)</text>
+
+  <!-- LANE 2 -->
+  <rect x="60" y="280" width="1210" height="240" class="lane"/>
+  <rect x="60" y="280" width="1210" height="32" class="laneHeader"/>
+  <text x="72" y="301" class="laneHeaderText">2) Evaluación Inteligente (LLM + datos multimodales)</text>
+
+  <!-- LANE 3 -->
+  <rect x="60" y="540" width="1210" height="210" class="lane"/>
+  <rect x="60" y="540" width="1210" height="32" class="laneHeader"/>
+  <text x="72" y="561" class="laneHeaderText">3) Perfilado Integral del Candidato</text>
+
+  <!-- LANE 4 -->
+  <rect x="60" y="770" width="1210" height="300" class="lane"/>
+  <rect x="60" y="770" width="1210" height="32" class="laneHeader"/>
+  <text x="72" y="791" class="laneHeaderText">4) Decisión y Seguimiento (Onboarding / No continuidad)</text>
+
+  <!-- ===== LANE 1 CARDS (reordenados) ===== -->
+  <!-- Solicitud -->
+  <rect x="85" y="92" width="250" height="130" class="card accentBlue"/>
+  <text x="100" y="117" class="cardTitle">Solicitud de Vacante</text>
+  <text x="100" y="139" class="cardSub">Requerimiento, perfil, KPIs, plazos</text>
+  <rect x="100" y="149" width="180" height="22" class="chip"/><text x="108" y="164" class="chipText">Aprobación y Apertura</text>
+  <rect x="100" y="175" width="150" height="22" class="chip"/><text x="108" y="190" class="chipText">Fuentes oficiales</text>
+
+  <!-- Ingesta -->
+  <rect x="365" y="92" width="260" height="130" class="card accentBlue"/>
+  <text x="380" y="117" class="cardTitle">Ingesta de Postulaciones</text>
+  <text x="380" y="139" class="cardSub">Portales, referidos, GitHub, OSINT</text>
+  <rect x="380" y="149" width="95" height="22" class="chip"/><text x="388" y="164" class="chipText">APIs</text>
+  <rect x="480" y="149" width="125" height="22" class="chip"/><text x="488" y="164" class="chipText">Normalización</text>
+  <rect x="380" y="175" width="205" height="22" class="chip"/><text x="388" y="190" class="chipText">Deduplicación perfiles</text>
+
+  <!-- Análisis CVs -->
+  <rect x="655" y="92" width="260" height="130" class="card accentBlue"/>
+  <text x="670" y="117" class="cardTitle">Análisis de CVs (ML + NLP)</text>
+  <text x="670" y="139" class="cardSub">Extracción de skills, experiencia, tech</text>
+  <rect x="670" y="149" width="140" height="22" class="chip"/><text x="678" y="164" class="chipText">Parsing + Embeddings</text>
+  <rect x="790" y="149" width="120" height="22" class="chip"/><text x="808" y="164" class="chipText">Estructuración Skills</text>
+  <rect x="670" y="175" width="200" height="22" class="chip"/><text x="678" y="190" class="chipText">Estandarización términos</text>
+
+  <!-- Ranking (alimentado por Ingesta + Análisis) -->
+  <rect x="-40" y="150" width="80" height="390" fill="#fde047" stroke="#fbbf24"/>
+  <!-- Texto vertical invertido (abajo → arriba) -->
+  <text x="0" y="345" writing-mode="vertical-rl" text-orientation="upright" text-anchor="middle" dominant-baseline="middle"
+  transform="rotate(180 0 345)"  
+  font-weight="700" font-size="13" fill="#1f2937">
+  Ranking Inteligente: fit técnico, seniority, disponibilidad
+  </text>
+
+
+  <!-- Dashboard RH (al final) -->
+  <rect x="945" y="92" width="300" height="130" class="card accentBlue"/>
+  <text x="960" y="117" class="cardTitle">Dashboard RH</text>
+  <text x="960" y="139" class="cardSub">Estado de búsquedas, fuentes, KPIs</text>
+  <rect x="960" y="149" width="100" height="22" class="chip"/><text x="968" y="164" class="chipText">Power BI</text>
+  <rect x="1065" y="149" width="120" height="22" class="chip"/><text x="1073" y="164" class="chipText">ATS / Integraciones</text>
+  <rect x="960" y="175" width="210" height="22" class="chip"/><text x="968" y="190" class="chipText">KPIs: time-to-screen, CTR</text>
+
+
+
+  <!-- ===== LANE 2 ===== -->
+  <!-- Entrevistas -->
+  <rect x="110" y="330" width="280" height="150" class="card accentGreen"/>
+  <text x="125" y="355" class="cardTitle">Entrevistas y Pruebas</text>
+  <text x="125" y="377" class="cardSub">Video / Audio / Formulario técnico</text>
+  <rect x="125" y="387" width="140" height="22" class="chip"/><text x="133" y="402" class="chipText">Guía estandarizada</text>
+  <rect x="125" y="413" width="180" height="22" class="chip"/><text x="133" y="428" class="chipText">Pruebas técnicas online</text>
+
+  <!-- STT -->
+  <rect x="415" y="330" width="260" height="150" class="card accentGreen"/>
+  <text x="430" y="355" class="cardTitle">Speech-to-Text (STT)</text>
+  <text x="430" y="377" class="cardSub">Transcripción segura y auditable</text>
+  <rect x="430" y="387" width="80" height="22" class="chip"/><text x="438" y="402" class="chipText">Whisper</text>
+  <rect x="515" y="387" width="140" height="22" class="chip"/><text x="523" y="402" class="chipText">Deepgram / Assembly</text>
+  <rect x="430" y="413" width="210" height="22" class="chip"/><text x="438" y="428" class="chipText">Diarización y timestamps</text>
+
+  <!-- LLM -->
+  <rect x="700" y="330" width="280" height="150" class="card accentGreen"/>
+  <text x="715" y="355" class="cardTitle">LLM – Análisis Semántico</text>
+  <text x="715" y="377" class="cardSub">Claridad, razonamiento, consistencia</text>
+  <rect x="715" y="387" width="150" height="22" class="chip"/><text x="723" y="402" class="chipText">Rúbricas de RH</text>
+  <rect x="870" y="387" width="95" height="22" class="chip"/><text x="878" y="402" class="chipText">Reportes</text>
+  <rect x="715" y="413" width="220" height="22" class="chip"/><text x="723" y="428" class="chipText">Puntuaciones normalizadas</text>
+
+  <!-- Integración -->
+  <rect x="995" y="330" width="260" height="150" class="card accentGreen"/>
+  <text x="1010" y="355" class="cardTitle">Integración con Preselección</text>
+  <text x="1010" y="377" class="cardSub">Cruce con CV/skills y criterios</text>
+  <rect x="1010" y="387" width="220" height="22" class="chip"/><text x="1018" y="402" class="chipText">Actualiza score y observaciones</text>
+  <rect x="1010" y="413" width="150" height="22" class="chip"/><text x="1018" y="428" class="chipText">Historial evaluativo</text>
+
+  <!-- ===== LANE 3 ===== -->
+  <!-- Perfil integral -->
+  <rect x="110" y="585" width="560" height="140" class="card accentIndigo"/>
+  <text x="125" y="610" class="cardTitle">Perfil Integral del Candidato</text>
+  <text x="125" y="632" class="cardSub">Repositorio unificado + Síntesis LLM + Dashboard</text>
+  <rect x="125" y="642" width="120" height="22" class="chip"/><text x="133" y="657" class="chipText">Skill matrix</text>
+  <rect x="250" y="642" width="160" height="22" class="chip"/><text x="258" y="657" class="chipText">Fortalezas / Brechas</text>
+  <rect x="425" y="642" width="220" height="22" class="chip"/><text x="433" y="657" class="chipText">Trazabilidad y versiones</text>
+
+  <!-- KPIs -->
+  <rect x="700" y="585" width="280" height="140" class="card accentIndigo"/>
+  <text x="715" y="610" class="cardTitle">KPIs y Auditoría</text>
+  <text x="715" y="632" class="cardSub">Time-to-hire, calidad, sesgo, conversión</text>
+  <rect x="715" y="642" width="240" height="22" class="chip"/><text x="723" y="657" class="chipText">Reportes normativos y ética</text>
+
+
+  <!-- ===== LANE 4 ===== -->
+  <!-- Comité -->
+  <rect x="110" y="830" width="270" height="180" class="card accentSlate"/>
+  <text x="125" y="855" class="cardTitle">Comité de Decisión</text>
+  <text x="125" y="877" class="cardSub">RH + Hiring Manager</text>
+  <rect x="125" y="887" width="220" height="22" class="chip"/><text x="133" y="902" class="chipText">Basado en Perfil Integral</text>
+  <rect x="125" y="913" width="200" height="22" class="chip"/><text x="133" y="928" class="chipText">Revisión de KPIs y riesgos</text>
+
+  
+  <!-- No continuidad -->
+  <rect x="700" y="830" width="260" height="180" class="card accentSlate"/>
+  <text x="715" y="855" class="cardTitle">No continuidad</text>
+  <text x="715" y="877" class="cardSub">Feedback + Talent Pool</text>
+  <rect x="715" y="887" width="220" height="22" class="chip"/><text x="723" y="902" class="chipText">Cierre respetuoso y marca</text>
+
+  <!-- Onboarding -->
+  <rect x="980" y="830" width="270" height="180" class="card accentSlate"/>
+  <text x="995" y="855" class="cardTitle">Onboarding Digital</text>
+  <text x="995" y="877" class="cardSub">Documentación, inducción, training</text>
+  <rect x="995" y="887" width="210" height="22" class="chip"/><text x="1003" y="902" class="chipText">SSO, accesos, 30/60/90</text>
+
+  <!-- Nota -->
+  <rect x="110" y="1088" width="1160" height="38" class="note"/>
+  <text x="124" y="1113" class="cardSub">
+    Notas: El flujo es auditable end-to-end. El LLM asiste; la decisión final es humana. El Chatbot/IA acompaña transversalmente desde el primer contacto hasta el cierre.
+  </text>
+ <!-- ROJO: Paso Lane 2 (borde inferior) hasta Lane 3 (borde superior izq), como en tu línea larga -->
+  <path class="arrowRed" d="M60,520 L60,540"/>
+
+  <!-- AZUL: Dashboard RH (borde inferior) -> Integración (borde superior) -->
+  <path class="arrowBlue" d="M1095,222 L1095,330"/>
+  
+</svg>

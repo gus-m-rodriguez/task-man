@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1400 1140">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        stroke: #059669;
+      }
+
+      .st0, .st1, .st2, .st3 {
+        fill: #fff;
+        stroke-width: 1.2px;
+      }
+
+      .st4 {
+        fill: #374151;
+        font-size: 12.5px;
+      }
+
+      .st4, .st5, .st6, .st7, .st8 {
+        isolation: isolate;
+      }
+
+      .st4, .st7 {
+        font-family: SegoeUI, 'Segoe UI';
+      }
+
+      .st9 {
+        fill: #fef08a;
+        stroke: #fde047;
+      }
+
+      .st10 {
+        fill: #fde047;
+        stroke: #fbbf24;
+      }
+
+      .st1 {
+        stroke: #2563eb;
+      }
+
+      .st5 {
+        fill: #0f172a;
+        font-size: 15px;
+      }
+
+      .st5, .st6, .st8 {
+        font-family: SegoeUI-Bold, 'Segoe UI';
+        font-weight: 700;
+      }
+
+      .st6 {
+        font-size: 13px;
+      }
+
+      .st6, .st8 {
+        fill: #1f2937;
+      }
+
+      .st11 {
+        fill: url(#Degradado_sin_nombre);
+      }
+
+      .st11, .st12, .st13, .st14 {
+        stroke: #e5e7eb;
+      }
+
+      .st7 {
+        fill: #111827;
+        font-size: 11px;
+      }
+
+      .st2 {
+        stroke: #4f46e5;
+      }
+
+      .st15 {
+        stroke: #00cfff;
+      }
+
+      .st15, .st16, .st17 {
+        stroke-miterlimit: 10;
+      }
+
+      .st15, .st17 {
+        fill: none;
+      }
+
+      .st16 {
+        fill: #e42213;
+      }
+
+      .st16, .st17 {
+        stroke: #e42213;
+      }
+
+      .st8 {
+        font-size: 13.5px;
+      }
+
+      .st12 {
+        fill: url(#Degradado_sin_nombre_3);
+      }
+
+      .st13 {
+        fill: url(#Degradado_sin_nombre_4);
+      }
+
+      .st18 {
+        fill: #fef9c3;
+        stroke: #fde68a;
+      }
+
+      .st14 {
+        fill: url(#Degradado_sin_nombre_2);
+      }
+
+      .st19 {
+        fill: #e5e7eb;
+      }
+
+      .st3 {
+        stroke: #64748b;
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre" data-name="Degradado sin nombre" x1="-258.29" y1="1110.14" x2="-258.29" y2="1109.14" gradientTransform="translate(313241 244270) scale(1210 -220)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_2" data-name="Degradado sin nombre 2" x1="-258.29" y1="1110.12" x2="-258.29" y2="1109.12" gradientTransform="translate(313241 266710) scale(1210 -240)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_3" data-name="Degradado sin nombre 3" x1="-258.29" y1="1110.14" x2="-258.29" y2="1109.14" gradientTransform="translate(313241 233670) scale(1210 -210)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_4" data-name="Degradado sin nombre 4" x1="-258.29" y1="1110.1" x2="-258.29" y2="1109.1" gradientTransform="translate(313241 333800) scale(1210 -300)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eef2f7"/>
+    </linearGradient>
+  </defs>
+  <rect class="st10" x="1343.3" y="280" width="40" height="730"/>
+  <rect class="st11" x="110" y="40" width="1210" height="220"/>
+  <rect class="st9" x="110" y="40" width="1210" height="32"/>
+  <text class="st8" transform="translate(122 61)"><tspan x="0" y="0">1) Búsqueda y Preselección (Dashboard + Filtro IA)</tspan></text>
+  <rect class="st14" x="110" y="280" width="1210" height="240"/>
+  <rect class="st9" x="110" y="280" width="1210" height="32"/>
+  <text class="st8" transform="translate(122 301)"><tspan x="0" y="0">2) Evaluación Inteligente (LLM + datos multimodales)</tspan></text>
+  <rect class="st12" x="110" y="540" width="1210" height="210"/>
+  <rect class="st9" x="110" y="540" width="1210" height="32"/>
+  <text class="st8" transform="translate(122 561)"><tspan x="0" y="0">3) Perfilado Integral del Candidato</tspan></text>
+  <rect class="st13" x="110" y="770" width="1210" height="300"/>
+  <rect class="st9" x="110" y="770" width="1210" height="32"/>
+  <text class="st8" transform="translate(122 791)"><tspan x="0" y="0">4) Decisión y Seguimiento (Onboarding / No continuidad)</tspan></text>
+  <rect class="st1" x="135" y="92" width="250" height="130"/>
+  <text class="st5" transform="translate(150 117)"><tspan x="0" y="0">Solicitud de Vacante</tspan></text>
+  <text class="st4" transform="translate(150 139)"><tspan x="0" y="0">Requerimiento, perfil, KPIs, plazos</tspan></text>
+  <rect class="st19" x="150" y="149" width="180" height="22"/>
+  <text class="st7" transform="translate(158 164)"><tspan x="0" y="0">Aprobación y Apertura</tspan></text>
+  <rect class="st19" x="150" y="175" width="150" height="22"/>
+  <text class="st7" transform="translate(158 190)"><tspan x="0" y="0">Fuentes oficiales</tspan></text>
+  <rect class="st1" x="415" y="92" width="260" height="130"/>
+  <text class="st5" transform="translate(430 117)"><tspan x="0" y="0">Ingesta de Postulaciones</tspan></text>
+  <text class="st4" transform="translate(430 139)"><tspan x="0" y="0">Portales, referidos, GitHub, OSINT</tspan></text>
+  <rect class="st19" x="430" y="149" width="95" height="22"/>
+  <text class="st7" transform="translate(438 164)"><tspan x="0" y="0">APIs</tspan></text>
+  <rect class="st19" x="530" y="149" width="125" height="22"/>
+  <text class="st7" transform="translate(538 164)"><tspan x="0" y="0">Normalización</tspan></text>
+  <rect class="st19" x="430" y="175" width="205" height="22"/>
+  <text class="st7" transform="translate(438 190)"><tspan x="0" y="0">Deduplicación perfiles</tspan></text>
+  <rect class="st1" x="705" y="92" width="260" height="130"/>
+  <text class="st5" transform="translate(720 117)"><tspan x="0" y="0">Análisis de CVs (ML + NLP)</tspan></text>
+  <text class="st4" transform="translate(720 139)"><tspan x="0" y="0">Extracción de skills, experiencia, tech</tspan></text>
+  <rect class="st19" x="720" y="149" width="140" height="22"/>
+  <text class="st7" transform="translate(728 164)"><tspan x="0" y="0">Parsing + Embeddings</tspan></text>
+  <rect class="st19" x="840" y="149" width="120" height="22"/>
+  <text class="st7" transform="translate(858 164)"><tspan x="0" y="0">Estructuración Skills</tspan></text>
+  <rect class="st19" x="720" y="175" width="200" height="22"/>
+  <text class="st7" transform="translate(728 190)"><tspan x="0" y="0">Estandarización términos</tspan></text>
+  <rect class="st10" x="10" y="150" width="80" height="390"/>
+  <text class="st6" transform="translate(52.73 519.06) rotate(-90)"><tspan x="0" y="0">Ranking Inteligente: fit técnico, seniority, disponibilidad</tspan></text>
+  <rect class="st1" x="995" y="92" width="300" height="130"/>
+  <text class="st5" transform="translate(1010 117)"><tspan x="0" y="0">Dashboard RH</tspan></text>
+  <text class="st4" transform="translate(1010 139)"><tspan x="0" y="0">Estado de búsquedas, fuentes, KPIs</tspan></text>
+  <rect class="st19" x="1010" y="149" width="100" height="22"/>
+  <text class="st7" transform="translate(1018 164)"><tspan x="0" y="0">Power BI</tspan></text>
+  <rect class="st19" x="1115" y="149" width="120" height="22"/>
+  <text class="st7" transform="translate(1123 164)"><tspan x="0" y="0">ATS / Integraciones</tspan></text>
+  <rect class="st19" x="1010" y="175" width="210" height="22"/>
+  <text class="st7" transform="translate(1018 190)"><tspan x="0" y="0">KPIs: time-to-screen, CTR</tspan></text>
+  <rect class="st0" x="160" y="330" width="280" height="150"/>
+  <text class="st5" transform="translate(175 355)"><tspan x="0" y="0">Entrevistas y Pruebas</tspan></text>
+  <text class="st4" transform="translate(175 377)"><tspan x="0" y="0">Video / Audio / Formulario técnico</tspan></text>
+  <rect class="st19" x="175" y="387" width="140" height="22"/>
+  <text class="st7" transform="translate(183 402)"><tspan x="0" y="0">Guía estandarizada</tspan></text>
+  <rect class="st19" x="175" y="413" width="180" height="22"/>
+  <text class="st7" transform="translate(183 428)"><tspan x="0" y="0">Pruebas técnicas online</tspan></text>
+  <rect class="st0" x="465" y="330" width="260" height="150"/>
+  <text class="st5" transform="translate(480 355)"><tspan x="0" y="0">Speech-to-Text (STT)</tspan></text>
+  <text class="st4" transform="translate(480 377)"><tspan x="0" y="0">Transcripción segura y auditable</tspan></text>
+  <rect class="st19" x="480" y="387" width="80" height="22"/>
+  <text class="st7" transform="translate(488 402)"><tspan x="0" y="0">Whisper</tspan></text>
+  <rect class="st19" x="565" y="387" width="140" height="22"/>
+  <text class="st7" transform="translate(573 402)"><tspan x="0" y="0">Deepgram / Assembly</tspan></text>
+  <rect class="st19" x="480" y="413" width="210" height="22"/>
+  <text class="st7" transform="translate(488 428)"><tspan x="0" y="0">Diarización y timestamps</tspan></text>
+  <rect class="st0" x="750" y="330" width="280" height="150"/>
+  <text class="st5" transform="translate(765 355)"><tspan x="0" y="0">LLM – Análisis Semántico</tspan></text>
+  <text class="st4" transform="translate(765 377)"><tspan x="0" y="0">Claridad, razonamiento, consistencia</tspan></text>
+  <rect class="st19" x="765" y="387" width="150" height="22"/>
+  <text class="st7" transform="translate(773 402)"><tspan x="0" y="0">Rúbricas de RH</tspan></text>
+  <rect class="st19" x="920" y="387" width="95" height="22"/>
+  <text class="st7" transform="translate(928 402)"><tspan x="0" y="0">Reportes</tspan></text>
+  <rect class="st19" x="765" y="413" width="220" height="22"/>
+  <text class="st7" transform="translate(773 428)"><tspan x="0" y="0">Puntuaciones normalizadas</tspan></text>
+  <rect class="st0" x="1045" y="330" width="260" height="150"/>
+  <text class="st5" transform="translate(1060 355)"><tspan x="0" y="0">Integración con Preselección</tspan></text>
+  <text class="st4" transform="translate(1060 377)"><tspan x="0" y="0">Cruce con CV/skills y criterios</tspan></text>
+  <rect class="st19" x="1060" y="387" width="220" height="22"/>
+  <text class="st7" transform="translate(1068 402)"><tspan x="0" y="0">Actualiza score y observaciones</tspan></text>
+  <rect class="st19" x="1060" y="413" width="150" height="22"/>
+  <text class="st7" transform="translate(1068 428)"><tspan x="0" y="0">Historial evaluativo</tspan></text>
+  <rect class="st2" x="160" y="585" width="560" height="140"/>
+  <text class="st5" transform="translate(175 610)"><tspan x="0" y="0">Perfil Integral del Candidato</tspan></text>
+  <text class="st4" transform="translate(175 632)"><tspan x="0" y="0">Repositorio unificado + Síntesis LLM + Dashboard</tspan></text>
+  <rect class="st19" x="175" y="642" width="120" height="22"/>
+  <text class="st7" transform="translate(183 657)"><tspan x="0" y="0">Skill matrix</tspan></text>
+  <rect class="st19" x="300" y="642" width="160" height="22"/>
+  <text class="st7" transform="translate(308 657)"><tspan x="0" y="0">Fortalezas / Debilidades</tspan></text>
+  <rect class="st19" x="475" y="642" width="220" height="22"/>
+  <text class="st7" transform="translate(483 657)"><tspan x="0" y="0">Trazabilidad y versiones</tspan></text>
+  <rect class="st2" x="750" y="585" width="280" height="140"/>
+  <text class="st5" transform="translate(765 610)"><tspan x="0" y="0">KPIs y Auditoría</tspan></text>
+  <text class="st4" transform="translate(765 632)"><tspan x="0" y="0">Time-to-hire, calidad, sesgo, conversión</tspan></text>
+  <rect class="st19" x="765" y="642" width="240" height="22"/>
+  <text class="st7" transform="translate(773 657)"><tspan x="0" y="0">Reportes normativos y ética</tspan></text>
+  <rect class="st3" x="160" y="830" width="270" height="180"/>
+  <text class="st5" transform="translate(175 855)"><tspan x="0" y="0">Comité de Decisión</tspan></text>
+  <text class="st4" transform="translate(175 877)"><tspan x="0" y="0">RH + Hiring Manager</tspan></text>
+  <rect class="st19" x="175" y="887" width="220" height="22"/>
+  <text class="st7" transform="translate(183 902)"><tspan x="0" y="0">Basado en Perfil Integral</tspan></text>
+  <rect class="st19" x="175" y="913" width="200" height="22"/>
+  <text class="st7" transform="translate(183 928)"><tspan x="0" y="0">Revisión de KPIs y riesgos</tspan></text>
+  <rect class="st3" x="750" y="830" width="260" height="180"/>
+  <text class="st5" transform="translate(765 855)"><tspan x="0" y="0">No continuidad</tspan></text>
+  <text class="st4" transform="translate(765 877)"><tspan x="0" y="0">Feedback + Talent Pool</tspan></text>
+  <rect class="st19" x="765" y="887" width="220" height="22"/>
+  <text class="st7" transform="translate(773 902)"><tspan x="0" y="0">Cierre respetuoso, cuidado de imagen de marca</tspan></text>
+  <rect class="st3" x="1030" y="830" width="270" height="180"/>
+  <text class="st5" transform="translate(1045 855)"><tspan x="0" y="0">Onboarding Digital</tspan></text>
+  <text class="st4" transform="translate(1045 877)"><tspan x="0" y="0">Documentación, inducción, training</tspan></text>
+  <rect class="st19" x="1045" y="887" width="210" height="22"/>
+  <text class="st7" transform="translate(1053 902)"><tspan x="0" y="0">SSO, accesos, 30/60/90</tspan></text>
+  <rect class="st18" x="160" y="1088" width="1160" height="38"/>
+  <text class="st4" transform="translate(174 1113)"><tspan x="0" y="0">Notas: El flujo es auditable end-to-end. El LLM asiste; la decisión final es humana. El Chatbot/IA acompaña transversalmente desde el primer contacto con el postulante hasta el cierre.</tspan></text>
+  <line class="st15" x1="385" y1="151.93" x2="413.59" y2="151.93"/>
+  <line class="st15" x1="410.19" y1="147.78" x2="413.59" y2="151.93"/>
+  <line class="st15" x1="410.19" y1="156.3" x2="413.59" y2="151.93"/>
+  <g>
+    <line class="st15" x1="676.2" y1="151.81" x2="704.8" y2="151.81"/>
+    <line class="st15" x1="701.39" y1="147.67" x2="704.8" y2="151.81"/>
+    <line class="st15" x1="701.39" y1="156.19" x2="704.8" y2="151.81"/>
+  </g>
+  <g>
+    <line class="st15" x1="966.53" y1="149.89" x2="995.12" y2="149.89"/>
+    <line class="st15" x1="991.71" y1="145.74" x2="995.12" y2="149.89"/>
+    <line class="st15" x1="991.71" y1="154.26" x2="995.12" y2="149.89"/>
+  </g>
+  <g>
+    <line class="st15" x1="440.7" y1="401.89" x2="465" y2="401.89"/>
+    <line class="st15" x1="462.1" y1="397.74" x2="465" y2="401.89"/>
+    <line class="st15" x1="462.1" y1="406.26" x2="465" y2="401.89"/>
+  </g>
+  <g>
+    <line class="st15" x1="724.85" y1="401.78" x2="749.15" y2="401.78"/>
+    <line class="st15" x1="746.25" y1="397.63" x2="749.15" y2="401.78"/>
+    <line class="st15" x1="746.25" y1="406.15" x2="749.15" y2="401.78"/>
+  </g>
+  <g>
+    <line class="st15" x1="1030" y1="400.84" x2="1045" y2="400.84"/>
+    <line class="st15" x1="1043.21" y1="397.87" x2="1045" y2="400.84"/>
+    <line class="st15" x1="1043.21" y1="403.97" x2="1045" y2="400.84"/>
+  </g>
+  <g>
+    <line class="st15" x1="1139.82" y1="256.22" x2="1139.82" y2="223"/>
+    <line class="st15" x1="1135.67" y1="226.96" x2="1139.82" y2="223"/>
+    <line class="st15" x1="1144.19" y1="226.96" x2="1139.82" y2="223"/>
+  </g>
+  <line class="st15" x1="90" y1="256.22" x2="1139.82" y2="256.22"/>
+  <line class="st16" x1="835" y1="247.04" x2="90" y2="247.04"/>
+  <line class="st16" x1="93.96" y1="251.19" x2="90" y2="247.04"/>
+  <line class="st16" x1="93.96" y1="242.67" x2="90" y2="247.04"/>
+  <line class="st17" x1="835" y1="222.74" x2="835" y2="247.04"/>
+  <line class="st17" x1="532.5" y1="223.63" x2="532.5" y2="247.04"/>
+  <line class="st16" x1="1245.85" y1="312" x2="388.7" y2="312"/>
+  <line class="st17" x1="1245.85" y1="222" x2="1245.85" y2="312"/>
+  <line class="st17" x1="388.7" y1="328.67" x2="388.7" y2="312"/>
+  <line class="st17" x1="384.56" y1="324.89" x2="388.7" y2="328.67"/>
+  <line class="st17" x1="393.67" y1="324.89" x2="388.7" y2="328.67"/>
+  <line class="st16" x1="1223.65" y1="568.32" x2="366.5" y2="568.32"/>
+  <line class="st17" x1="1223.65" y1="480" x2="1223.65" y2="568.32"/>
+  <line class="st17" x1="366.5" y1="584.98" x2="366.5" y2="568.32"/>
+  <line class="st17" x1="362.35" y1="581.2" x2="366.5" y2="584.98"/>
+  <line class="st17" x1="371.46" y1="581.2" x2="366.5" y2="584.98"/>
+  <line class="st16" x1="896.35" y1="505.18" x2="91.05" y2="505.18"/>
+  <line class="st16" x1="95.01" y1="509.32" x2="91.05" y2="505.18"/>
+  <line class="st16" x1="95.01" y1="500.8" x2="91.05" y2="505.18"/>
+  <line class="st17" x1="896.35" y1="480.88" x2="896.35" y2="505.18"/>
+  <line class="st17" x1="577" y1="480" x2="577" y2="505.18"/>
+  <line class="st17" x1="307.52" y1="480" x2="307.52" y2="505.18"/>
+  <g>
+    <line class="st15" x1="1179.1" y1="513.61" x2="1179.1" y2="480.39"/>
+    <line class="st15" x1="1174.95" y1="484.35" x2="1179.1" y2="480.39"/>
+    <line class="st15" x1="1183.47" y1="484.35" x2="1179.1" y2="480.39"/>
+  </g>
+  <line class="st15" x1="91.98" y1="513.61" x2="1179.1" y2="513.61"/>
+  <g>
+    <line class="st15" x1="1179.1" y1="1043.22" x2="1179.1" y2="1010"/>
+    <line class="st15" x1="1174.95" y1="1013.96" x2="1179.1" y2="1010"/>
+    <line class="st15" x1="1183.47" y1="1013.96" x2="1179.1" y2="1010"/>
+  </g>
+  <line class="st15" x1="299.51" y1="1043.22" x2="1179.1" y2="1043.22"/>
+  <g>
+    <line class="st15" x1="864.56" y1="1043.22" x2="864.56" y2="1010"/>
+    <line class="st15" x1="860.41" y1="1013.96" x2="864.56" y2="1010"/>
+    <line class="st15" x1="868.93" y1="1013.96" x2="864.56" y2="1010"/>
+  </g>
+  <line class="st15" x1="299.51" y1="1010" x2="299.51" y2="1043.22"/>
+  <line class="st15" x1="50" y1="540" x2="50" y2="653"/>
+  <g>
+    <line class="st15" x1="50" y1="652.91" x2="160" y2="652.91"/>
+    <line class="st15" x1="146.89" y1="649.71" x2="160" y2="652.91"/>
+    <line class="st15" x1="146.89" y1="656.29" x2="160" y2="652.91"/>
+  </g>
+  <g>
+    <line class="st15" x1="73.44" y1="912.87" x2="157.63" y2="912.87"/>
+    <line class="st15" x1="147.6" y1="908.19" x2="157.63" y2="912.87"/>
+    <line class="st15" x1="147.6" y1="917.81" x2="157.63" y2="912.87"/>
+  </g>
+  <line class="st15" x1="73.44" y1="664" x2="73.44" y2="911.68"/>
+  <line class="st15" x1="73.44" y1="664" x2="160" y2="664"/>
+  <g>
+    <line class="st15" x1="720" y1="654.92" x2="750" y2="654.92"/>
+    <line class="st15" x1="746.42" y1="649.17" x2="750" y2="654.92"/>
+    <line class="st15" x1="746.42" y1="660.98" x2="750" y2="654.92"/>
+  </g>
+  <g>
+    <line class="st15" x1="750" y1="655.08" x2="720" y2="655.08"/>
+    <line class="st15" x1="723.58" y1="660.83" x2="720" y2="655.08"/>
+    <line class="st15" x1="723.58" y1="649.02" x2="720" y2="655.08"/>
+  </g>
+  <text class="st7" transform="translate(1363.3 784.25) rotate(-90)"><tspan x="0" y="0">Chatbot / IA Conversacional (seguimiento, coordinación, feedback)</tspan></text>
+</svg>

@@ -3,13 +3,18 @@ import {Button, Card, Container, Input, Label} from '../components/ui/index.js';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
+import { useEffect } from 'react';
 
 //import axios from 'axios';
 
 function RegisterPage() {
   const {register, handleSubmit, formState: {errors}} = useForm();
-  const { signup, errors: setUserErrors } = useAuth();
+  const { signup, errors: setUserErrors, setErrors } = useAuth();
   const navigate = useNavigate();
+    useEffect(() => {
+    setErrors([]);
+    return () => setErrors([]);
+  }, [setErrors]);
   const onSubmit = handleSubmit (async(data) => {
     //console.log(data);
     //const response = await fetch ('http://localhost:3000/api/signup', {
@@ -25,7 +30,7 @@ function RegisterPage() {
     //console.log(result);
     const user =await signup(data);
     if(user) {
-      navigate('/perfil');
+      navigate('/tareas');
     }
   });
  

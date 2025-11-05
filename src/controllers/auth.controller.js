@@ -80,3 +80,59 @@ export const profile = async (req, res) => {
     return res.json(resultado.rows[0]);
 
 };
+
+export const updateProfile = async (req, res) => {
+  const { nombre, email } = req.body;
+
+  try {
+    if (!nombre || nombre.trim().length < 3) {
+      return res.status(400).json({ message: "El nombre debe tener al menos 3 caracteres" });
+    }
+    if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+      return res.status(400).json({ message: "Email inválido" });
+    }
+
+    // ¿ya existe ese email en otro user?
+    const exists = await pool.query(
+      "SELECT id FROM usuarios WHERE email = $1 AND id <> $2",
+      [email, req.usuarioId]
+    );
+    if (exists.rowCount > 0) {
+      return res.status(409).json({ message: "El correo ya se encuentra registrado por otro usuario" });
+    }
+
+    const updated = await pool.query(
+        "UPDATE usuarios SET nombre=$1, email=$2, fecha_actualizacion=NOW() WHERE id=$3 RETURNING id, nombre, email, gravatar, fecha_registro, fecha_actualizacion",
+        [nombre.trim(), email.trim(), req.usuarioId]
+    );
+    return res.json(updated.rows[0]);
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: "Error al actualizar el perfil" });
+  }
+};
+
+// === CHANGE PASSWORD
+export const changePassword = async (req, res) => {
+  const { currentPassword, newPassword } = req.body;
+
+  try {
+    if (!newPassword || newPassword.length < 6) {
+      return res.status(400).json({ message: "La nueva contraseña debe tener al menos 6 caracteres" });
+    }
+
+    const q = await pool.query("SELECT id, password FROM usuarios WHERE id=$1", [req.usuarioId]);
+    if (q.rowCount === 0) return res.status(404).json({ message: "Usuario no encontrado" });
+
+    const ok = await bcrypt.compare(currentPassword ?? "", q.rows[0].password);
+    if (!ok) return res.status(400).json({ message: "La contraseña actual es incorrecta" });
+
+    const hashed = await bcrypt.hash(newPassword, 10);
+    await pool.query("UPDATE usuarios SET password=$1 WHERE id=$2", [hashed, req.usuarioId]);
+
+    return res.json({ message: "Contraseña actualizada correctamente" });
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: "Error al actualizar la contraseña" });
+  }
+};
